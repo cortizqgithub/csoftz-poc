@@ -37,6 +37,16 @@ public class UserRepositoryRecordShouldTest {
         assertEquals(user.getAge(), 50);
     }
 
+    @Test
+    public void canDelete() {
+        User user = new User("User name", 23);
+        user = userRepository.save(user);
+
+        userRepository.delete(user.getId());
+        boolean exist = userRepository.exists(user.getId());
+        assertEquals(exist, false);
+    }
+
     @After
     public void tearDown() {
         userRepository.deleteAll();
