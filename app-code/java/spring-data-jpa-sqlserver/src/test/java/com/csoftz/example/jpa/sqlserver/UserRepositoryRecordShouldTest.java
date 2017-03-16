@@ -26,7 +26,7 @@ public class UserRepositoryRecordShouldTest {
     }
 
     @Test
-    public void canUpdateInfo(){
+    public void canUpdateInfo() {
         User user = new User("User name", 23);
         user = userRepository.save(user);
 
@@ -34,10 +34,11 @@ public class UserRepositoryRecordShouldTest {
         user = userRepository.save(user);
         User userRead = userRepository.findOne(user.getId());
         assertEquals(user, userRead);
+        assertEquals(user.getAge(), 50);
     }
 
     @After
-    public void teaDown(){
+    public void tearDown() {
         userRepository.deleteAll();
     }
 
