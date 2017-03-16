@@ -1,11 +1,13 @@
+server:
+  port: 8082
 spring:
-   datasource:
-     url: jdbc:sqlserver://carlosortiz;databaseName=jpatest
-     username: sa
-     password: Arkix2015!
-     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-   jpa:
-     show-sql: true
-     hibernate:
-       dialect : org.hibernate.dialect.SQLServer2012Dialect
-       ddl-auto: create-drop
+  datasource:
+    url: jdbc:sqlserver://carlosortiz;databaseName=jpa
+    username: sa
+    password: Arkix2015!
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: true
+    hibernate:
+      dialect : org.hibernate.dialect.SQLServer2012Dialect
+      ddl-auto: validate
