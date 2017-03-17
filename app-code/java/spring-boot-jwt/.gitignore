@@ -22,3 +22,9 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.db
