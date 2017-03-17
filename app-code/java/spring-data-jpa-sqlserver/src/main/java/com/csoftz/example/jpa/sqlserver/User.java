@@ -15,6 +15,9 @@ public class User {
     private int age;
 
     public User() {
+        this.id = 0;
+        this.name = "";
+        this.age = 0;
     }
     public User(String name, int age) {
         this.name = name;

@@ -32,8 +32,9 @@ public class UserController {
              user = repository.findOne(id);
             user.setAge(user.getAge() + 1);
             repository.save(user);
+            return new ResponseEntity<>(user, HttpStatus.CREATED);
         }
-        return new ResponseEntity<>(user, HttpStatus.CREATED);
+        return new ResponseEntity<>(new User(), HttpStatus.NOT_ACCEPTABLE);
     }
 
     @GetMapping()
