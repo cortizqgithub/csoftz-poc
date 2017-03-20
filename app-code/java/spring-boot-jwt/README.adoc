@@ -1,0 +1,7 @@
+= Securing Spring Boot with JWTs
+This Maven project follows directions from this article
+https://auth0.com/blog/securing-spring-boot-with-jwts/
+
+Source code at
+https://github.com/auth0-blog/spring-boot-jwts
+

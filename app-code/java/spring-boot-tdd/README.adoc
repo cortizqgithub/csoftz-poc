@@ -1,0 +1,4 @@
+= Spring Boot: REST + TDD from scratch
+
+This project idea was taken from this article 
+https://hackernoon.com/spring-boot-rest-tdd-from-scratch-15f13ed799e0#.g7jno1dip
