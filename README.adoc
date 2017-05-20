@@ -1,6 +1,6 @@
 = csoftz-poc :: CSoftZ Proof Of Concept git repository
 
-V1.0.0-Mar.15/2017
+V1.0.1-Mar.20/2017
 
 The Ionic sample is based in the article
 http://developer.okta.com/blog/2017/05/17/develop-a-mobile-app-with-ionic-and-spring-boot
