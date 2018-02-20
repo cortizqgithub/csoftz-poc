@@ -1,0 +1,13 @@
+= spring-boot-portfolio :: Portfolio Microservice
+This application is taken from the following link: 
+https://www.infoq.com/articles/Microservices-SpringBoot
+
+There are two microservices here:
+. *Portfolio:* Which stores information about users (limited to a fixed quantity and they are in-memory). This is in Jersey.
+. *Prices:* Which connects to Portfolio and gathers user portfolio prices. This is Spring MVC based.
+
+Uses Consul, microservices concepts.
+
+== Sample URLS
+.  http://localhost:57116/portfolios/customer/1/portfolio/2
+.  http://localhost:57216/pricing/customer/1/portfolio/2

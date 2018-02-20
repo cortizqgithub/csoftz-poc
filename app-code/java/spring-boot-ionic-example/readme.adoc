@@ -1,0 +1,5 @@
+= spring-boot-ionic-example :: The IONIC Spring boot example.
+The Ionic sample is based in the article
+http://developer.okta.com/blog/2017/05/17/develop-a-mobile-app-with-ionic-and-spring-boot
+The github repo is
+https://github.com/oktadeveloper/spring-boot-ionic-example

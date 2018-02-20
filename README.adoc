@@ -1,8 +1,20 @@
 = csoftz-poc :: CSoftZ Proof Of Concept git repository
 
-V1.0.1-Mar.20/2017
+V1.0.2-Feb.20/2018
 
-The Ionic sample is based in the article
-http://developer.okta.com/blog/2017/05/17/develop-a-mobile-app-with-ionic-and-spring-boot
-The github repo is
-https://github.com/oktadeveloper/spring-boot-ionic-example
+Here you can find as many proof of concepts based on articles and other materials. This 
+repository aims to hold as a reference the several topics being studied.
+
+For each folder there is a readme where you can see where it was taken from.
+*NOTE:* If not present it is because the link is missing.
+
+All the applications are stored in the 'app-code' folder. A 'java' or any other language name
+is used to tell you about the programming language for the application.
+
+. *spring-boot-angular-example:* A Spring Boot application in Java 8 for backend and Angular 5.x for frontend.
+. *spring-boot-auth0:* Reflects a way to use 'Auth0' API for authorization/authentication.
+. *spring-boot-ionic-example:* A Spring Boot application in Java 8 for backend and IONIC for frontend.
+. *spring-boot-jwt:* Spring boot JWT example.
+. *spring-boot-tdd:* A sample to learn TDD.
+. *spring-boot-jpa-sqlserver:* Spring Boot JPA database connectivity to SQL Server.
+
