@@ -11,6 +11,9 @@ For each folder there is a readme where you can see where it was taken from.
 All the applications are stored in the 'app-code' folder. A 'java' or any other language name
 is used to tell you about the programming language for the application.
 
+== Java
+Here you can find POC using Java and other technologies.
+
 . *spring-boot-angular-example:* A Spring Boot application in Java 8 for backend and Angular 5.x for frontend.
 . *spring-boot-auth0:* Reflects a way to use 'Auth0' API for authorization/authentication.
 . *spring-boot-ionic-example:* A Spring Boot application in Java 8 for backend and IONIC for frontend.
@@ -18,3 +21,6 @@ is used to tell you about the programming language for the application.
 . *spring-boot-tdd:* A sample to learn TDD.
 . *spring-boot-jpa-sqlserver:* Spring Boot JPA database connectivity to SQL Server.
 
+== CS
+Here you can find POC using C# and other technologies.
+. *net-core-angular:* A Tutorial using C#, .NET Core, ASP.NET Core and Postgresql and Angular 4.x.

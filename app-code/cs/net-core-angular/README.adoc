@@ -1,0 +1,10 @@
+= Tutorial for .NET Core and Angular
+This tutorial is based on content .NET Core Series (follow next URLs)
+
+* https://code-maze.com/net-core-series/
+* https://github.com/CodeMazeBlog/.NET-Core-Series
+
+== References
+
+* Top REST API Best Practices https://code-maze.com/top-rest-api-best-practices/
+* RESTful API Basic Guidelines https://blog.restcase.com/restful-api-basic-guidelines/
