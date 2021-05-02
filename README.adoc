@@ -1,6 +1,6 @@
 = csoftz-poc :: CSoftZ Proof Of Concept git repository
 
-V1.0.2-Feb.20/2018
+V2021.0.0
 
 Here you can find as many proof of concepts based on articles and other materials. This 
 repository aims to hold as a reference the several topics being studied.
@@ -20,6 +20,7 @@ Here you can find POC using Java and other technologies.
 . *spring-boot-jwt:* Spring boot JWT example.
 . *spring-boot-tdd:* A sample to learn TDD.
 . *spring-boot-jpa-sqlserver:* Spring Boot JPA database connectivity to SQL Server.
+. *examples:* Any tip around java language.
 
 == CS
 Here you can find POC using C# and other technologies.
