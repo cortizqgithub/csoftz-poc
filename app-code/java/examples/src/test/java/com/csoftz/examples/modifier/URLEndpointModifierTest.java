@@ -15,6 +15,7 @@ import static com.csoftz.examples.modifier.GlobalConstants.ENDPOINT_TEST_USER_TO
 import static com.csoftz.examples.modifier.GlobalConstants.HTTP_MODIFY_INFO_URL;
 import static com.csoftz.examples.modifier.GlobalConstants.HTTP_TEST_ONE;
 import static com.csoftz.examples.modifier.URLEndPointModifierUtils.createEndPointURLModifier;
+import static com.csoftz.examples.modifier.URLEndpointList.retrieveEndpointFor;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
@@ -33,7 +34,7 @@ class URLEndpointModifierTest {
     @Test
     void whenEndpointModifyIsSetToTrueAndTestUserTokenConfigUsedThenURLIsModified() {
         urlEndpointModifier = createEndPointURLModifier(true);
-        Endpoint endpoint = URLEndpointList.retrieveEndpointFor(ENDPOINT_TEST_USER_TOKEN);
+        Endpoint endpoint = retrieveEndpointFor(ENDPOINT_TEST_USER_TOKEN);
         urlEndpointModifier.modifyURLFor(endpoint);
         assertThat(endpoint.getUrl()).isEqualTo(HTTP_MODIFY_INFO_URL);
     }
@@ -41,7 +42,7 @@ class URLEndpointModifierTest {
     @Test
     void whenEndpointModifyISetToTrueAndTestEndpointconfiguredThenURLIsModified() {
         urlEndpointModifier = createEndPointURLModifier(true);
-        Endpoint endpoint = URLEndpointList.retrieveEndpointFor(ENDPOINT_TEST);
+        Endpoint endpoint = retrieveEndpointFor(ENDPOINT_TEST);
         urlEndpointModifier.modifyURLFor(endpoint);
         assertThat(endpoint.getUrl()).isEqualTo(HTTP_MODIFY_INFO_URL);
     }
@@ -49,7 +50,7 @@ class URLEndpointModifierTest {
     @Test
     void whenEndpointModifyIsSetToTrueWithNoMapForTestModAndTestModIsConfiguredNoUrlIsModified() {
         urlEndpointModifier = createEndPointURLModifier(true);
-        Endpoint endpoint = URLEndpointList.retrieveEndpointFor(ENDPOINT_TEST_MOD);
+        Endpoint endpoint = retrieveEndpointFor(ENDPOINT_TEST_MOD);
         urlEndpointModifier.modifyURLFor(endpoint);
         assertThat(endpoint.getUrl()).isNull();
     }
@@ -57,7 +58,7 @@ class URLEndpointModifierTest {
     @Test
     void whenEndpointModifyIsSetToFalseWithNoMapForTestModAndAnyEndpointconfigUsedThenNoUrlIsModified() {
         urlEndpointModifier = createEndPointURLModifier(false);
-        Endpoint endpoint = URLEndpointList.retrieveEndpointFor(ENDPOINT_TEST_ONE);
+        Endpoint endpoint = retrieveEndpointFor(ENDPOINT_TEST_ONE);
         urlEndpointModifier.modifyURLFor(endpoint);
         assertThat(endpoint.getUrl()).isEqualTo(HTTP_TEST_ONE);
     }

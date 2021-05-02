@@ -17,7 +17,6 @@ import static com.csoftz.examples.modifier.GlobalConstants.HTTP_MODIFY_OTHER_URL
 import static com.csoftz.examples.modifier.GlobalConstants.HTTP_TEST_ONE;
 import static com.csoftz.examples.modifier.GlobalConstants.HTTP_TEST_TWO;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -38,13 +37,13 @@ public class URLEndPointModifierUtils {
      * @see URLEndpointModifier
      */
     public static URLEndpointModifier createEndPointURLModifier(boolean enableModifyURL) {
-        Map<String, String> urlMap = new HashMap<>();
-        urlMap.put(ENDPOINT_TEST, HTTP_MODIFY_INFO_URL);
-        urlMap.put(ENDPOINT_TEST_USER_TOKEN, HTTP_MODIFY_INFO_URL);
-        urlMap.put(ENDPOINT_TEST_ONE, HTTP_MODIFY_OTHER_URL);
-        urlMap.put(ENDPOINT_TEST_TWO, HTTP_MODIFY_OTHER_URL);
-
-        return new URLEndpointModifier(enableModifyURL, urlMap);
+        return new URLEndpointModifier(enableModifyURL,
+            Map.of(
+                ENDPOINT_TEST, HTTP_MODIFY_INFO_URL,
+                ENDPOINT_TEST_USER_TOKEN, HTTP_MODIFY_INFO_URL,
+                ENDPOINT_TEST_ONE, HTTP_MODIFY_OTHER_URL,
+                ENDPOINT_TEST_TWO, HTTP_MODIFY_OTHER_URL)
+        );
     }
 
     /**

@@ -62,4 +62,13 @@ public final class URLEndpointList {
             .findFirst()
             .orElse(null);
     }
+
+    /**
+     * Get the full list of endpoints registered.
+     *
+     * @return List of Endpoints.
+     */
+    public static List<Endpoint> retrieveAllEndpoints() {
+        return endpoints;
+    }
 }
