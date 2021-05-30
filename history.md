@@ -1,7 +1,10 @@
 File:     history.md
 Author:   Carlos Adolfo Ortiz Q
 Date:     Mar.15/2017
-Modified: May.01/2021
+Modified: May.29/2021
+
+May.29/2021 2021.1.0
+- Add new sample application.
 
 May.01/2021 2021.0.0
 - Changes the way release naming is tagged.

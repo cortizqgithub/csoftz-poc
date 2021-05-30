@@ -1,6 +1,6 @@
 = csoftz-poc :: CSoftZ Proof Of Concept git repository
 
-V2021.0.0
+V2021.1.0
 
 Here you can find as many proof of concepts based on articles and other materials. This 
 repository aims to hold as a reference the several topics being studied.
